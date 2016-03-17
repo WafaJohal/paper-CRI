@@ -1,0 +1,133 @@
+\documentclass[lettersize, apacite, twoside, HRI]{apa_HRI}
+% Required package for HRI journal format
+\usepackage{times}
+
+% some very useful LaTeX packages include:
+\usepackage{graphicx}  % Written by David Carlisle and Sebastian Rahtz
+\usepackage{subfigure} % Written by Steven Douglas Cochran
+                        % This package makes it easy to put subfigures
+                        % in your figures. i.e., "figure 1a and 1b"
+                        % Docs are in "Using Imported Graphics in LaTeX2e"
+                        % by Keith Reckdahl which also documents the graphicx
+                        % package (see above). subfigure.sty is already
+                        % installed on most LaTeX systems. The latest version
+                        % and documentation can be obtained at:
+                        % http://www.ctan.org/tex-archive/macros/latex/contrib/supported/subfigure/
+                      
+% The following are options that can be used in apa.cls but that are not used in apa_HRI
+%\journal{Do not include -- hard coded}
+%\volume{Volume 1, Number 3, pp. 1-16}
+%\copnum{Do not include -- hard coded}
+%\ccoppy{Do not include -- hardcoded}
+%\ThreeLevelHeading  % HRI has a required heading style, and the HRI option overrides any of the apa.cls heading style commands
+
+% The following are required options for the HRI journal format
+\rightheader{Short Title}   % This should be the title, or a shortened version of the title if your title is long.
+% \shorttitle{Beyond Fan-Out}    % Not used in HRI journal mode
+\leftheader{LastName1 et al.}	  % For one or two authors, include both authors last names.  For three or more, use first author's last name et al.
+
+% REQUIRED: paper title
+\title{An Informative Title: An Optional Subtitle}
+
+% REQUIRED: Author names and affiliations
+% Note that authors from up to six affiliations can be added.  Beyond that, you are on your own.
+% Group authors from the same affiliation together -- see example for two authors
+%\author{Sole Author}
+%\affiliation{Author Affiliation}
+\twoauthors{First Author, Another Author}{Someone Else}
+\twoaffiliations{First Affiliation}{Second Affiliation}
+%\threeauthors{First Author}{Second Author}{Third Author} 
+%\threeaffiliations{First Affiliation}{Second Affiliation}{Some Important Place}
+%\fourauthors{First Author}{Second Author}{Third Author}{Fourth Author}
+%\fouraffiliations{First Affiliation}{Second Affiliation}{Third Affiliation}{Fourth Affiliation}
+%\fiveauthors{First Author}{Second Author}{Third Author}{Fourth Author}{Fifth Author}
+%\fiveaffiliations{First Affiliation}{Second Affiliation}{Third Affiliation}{Fourth Affiliation}{Fifth Affiliation}
+%\sixauthors{First Author}{Second Author}{Third Author}{Fourth Author}{Fifth Author}{Sixth Author}
+%\sixaffiliations{First Affiliation}{Second Affiliation}{Third Affiliation}{Fourth Affiliation}{Fifth Affiliation}{Sixth Affiliation}
+
+% REQUIRED: author addresses and email addresses
+% Only the company/university/lab should be listed in affiliations above.
+% The full address and email addresses will be included in a footnote.
+% An address and email are only required for the corresponding author, but others may be included.
+
+% REQUIRED: abstract
+\abstract{
+ }
+
+% REQUIRED: keywords
+\keywords{Human-robot interaction, recognition, sensors, emotions}
+
+% OPTIONAL: at submission time, you may include the following terms that may be useful for reviewers.
+% These should be commented out in the final manuscript submrission. 
+%\field{Technical, behavioral, design, or other}
+%\contribution{article, short report, perspective, other (state)}
+%\COI{Conflict of interest?  state}
+%\uniqueness{State here (see CFP for required statement)}
+
+%\acknowledgements{}
+
+% make the title area
+\begin{document}
+\maketitle
+
+%*****************************************************************************************************
+\section{Introduction}
+\label{sec:introduction}
+
+
+
+
+%*****************************************************************************************************
+\section{Applications of CRI}
+
+
+\subsection{Education}
+\subsection{Entertainment}
+
+%*****************************************************************************************************
+\section{Age groups}
+
+%*****************************************************************************************************
+\section{Evaluation Methods}
+\subsection{Nb of participants, gender}
+\subsection{Self assessment }
+
+%*****************************************************************************************************
+
+
+%*****************************************************************************************************
+\section {todo}
+\label{sec:Methods}
+
+%*****************************************************************************************************
+
+\section{Acknowledgements}
+
+\section{Biblography}
+
+\begin{verbatim}
+\bibliography{sample.bib}
+\end{verbatim}
+
+
+
+
+\section{Author Affiliations}
+It is good practice to include author affiliations and contact information.  For this journal, affiliation and contact information is included after the biliography using the following commands:
+\begin{verbatim}
+\hrule
+\vspace*{.1in}
+ First author, Affiliation, Institution, City, Country.  
+ Email: author1\@gmail.com.  
+ Second author, Affiliation, Institution, City, Country.  
+ Email: author2\@gmail.com
+\end{verbatim}
+
+\bibliography{sample}
+
+\hrule
+\vspace*{.1in}
+Authors' names and contact information: First author, Affiliation, Institution, City, Country.  Email: author1\@gmail.com.  Second author, Affiliation, Institution, City, Country.  Email: author2\@gmail.com.
+
+\end{document} 
+
